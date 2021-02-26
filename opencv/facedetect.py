@@ -37,15 +37,15 @@ def imgDetector(img,cascade):
 	for box in results:
 		x,y,w,h = box
 		cv2.rectangle(img,(x,y),(x+w,y+h),(255,255,255),thickness=2)
-	cv2.imshw('facenet',img)
+	cv2.imshow('facenet',img)
 	cv2.waitKey(10000)
 
 cascade = 'haarcascade_frontalface_alt.xml'
 cas = cv2.CascadeClassifier(cascade)
 
-cam = cv2.VideoCapture('sample.mp4')
-img = cv2.imread('sample.jpg')
-flag = input("if You Want to VideoDetect you input a 'V'\n you Want a ImageDetect, you input a 'I")
+cam = cv2.VideoCapture('../media/sample.mp4')
+img = cv2.imread('../media/sample.jpg')
+flag = input("if You Want to VideoDetect you input a 'V' \n you Want a ImageDetect, you input a I : " )
 if flag == 'I' or flag == 'i':
 	imgDetector(img,cas)
 elif flag == 'V' or flag == 'v':
