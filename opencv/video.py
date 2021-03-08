@@ -2,7 +2,7 @@ import cv2
 import timeit
 
 # 영상 정보 불러오기
-video = cv2.VideoCapture('KITTI.mp4')
+video = cv2.VideoCapture('../media/video.mp4')
 
 while True:
 

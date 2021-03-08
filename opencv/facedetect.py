@@ -43,7 +43,7 @@ def imgDetector(img,cascade):
 cascade = 'haarcascade_frontalface_alt.xml'
 cas = cv2.CascadeClassifier(cascade)
 
-cam = cv2.VideoCapture('../media/sample.mp4')
+cam = cv2.VideoCapture('../media/video.mp4')
 img = cv2.imread('../media/sample.jpg')
 flag = input("if You Want to VideoDetect you input a 'V' \n you Want a ImageDetect, you input a I : " )
 if flag == 'I' or flag == 'i':
